@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/presenters/src",
+  "prefix": "mono",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/presenters"],
+      "options": {
+        "jestConfig": "libs/presenters/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/presenters/**/*.ts",
+          "libs/presenters/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

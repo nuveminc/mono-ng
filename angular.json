@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "http-gateway": "libs/http-gateway",
+    "mocks": "libs/mocks",
+    "presenters": "libs/presenters",
+    "private": "apps/private",
+    "private-e2e": "apps/private-e2e",
+    "repositories": "libs/repositories",
+    "ui-components": "libs/ui-components"
+  }
+}

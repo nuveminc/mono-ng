@@ -1,0 +1,11 @@
+<div>
+  <form [formGroup]="entityForm" (ngSubmit)="onSubmit()">
+    <ng-container *ngFor="let field of fields">
+      <div>
+        <label [for]="field">{{ field }}</label>
+        <input [id]="field" type="text" [formControlName]="field" />
+      </div>
+    </ng-container>
+    <button type="submit">Add/Update</button>
+  </form>
+</div>

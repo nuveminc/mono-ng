@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mono/interfaces": ["libs/interfaces/index.ts"],
+      "@mono/app-config": ["libs/app-config/index.ts"],
+      "@mono/http-gateway": ["libs/http-gateway/src/index.ts"],
+      "@mono/mocks": ["libs/mocks/src/index.ts"],
+      "@mono/presenters": ["libs/presenters/src/index.ts"],
+      "@mono/repositories": ["libs/repositories/src/index.ts"],
+      "@mono/ui-components": ["libs/ui-components/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

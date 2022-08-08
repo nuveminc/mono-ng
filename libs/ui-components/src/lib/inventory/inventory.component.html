@@ -1,0 +1,18 @@
+<h4>Parts: <span [innerHTML]="(items$ | async)?.length"></span></h4>
+<button (click)="toggleDialog()">Show Form</button>
+<ng-container *ngIf="showForm$ | async">
+  <mono-inventory-form
+    [item]="selectedItem$"
+    (itemSubmitted)="itemSubmitted($event)"
+  ></mono-inventory-form>
+</ng-container>
+<ng-container *ngFor="let item of items$ | async; let i = index">
+  <div
+    class="item-list-container"
+    [ngClass]="{ selected: isSelected(item) }"
+    (click)="selectItem(item)"
+  >
+    <div>Part Number: {{ item.partNo }}</div>
+    <div>Compatibility: {{ item.compatability }}</div>
+  </div>
+</ng-container>

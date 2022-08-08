@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
+  line-height: 1.25em;
+}
+
+button {
+  padding: 0.5em 1.25em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #858dff;
+  background-color: #fff;
+}

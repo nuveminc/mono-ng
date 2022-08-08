@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/http-gateway/src",
+  "prefix": "mono",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/http-gateway"],
+      "options": {
+        "jestConfig": "libs/http-gateway/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/http-gateway/**/*.ts",
+          "libs/http-gateway/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:shared"]
+}

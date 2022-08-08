@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/mocks/src",
+  "prefix": "mono",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/mocks"],
+      "options": {
+        "jestConfig": "libs/mocks/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/mocks/**/*.ts", "libs/mocks/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
